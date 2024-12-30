@@ -1,7 +1,7 @@
 "Title" = "VirtualBox Video Adapter";
 "Bus Type" = "PCI";
 "Family" = "Display";
-"Version" = "1.00";
+"Version" = "1.1";
 "Auto Detect IDs" = "0xbeef80ee";
 "Instance" = "0";
 "Driver Name" = "VBoxVideo";

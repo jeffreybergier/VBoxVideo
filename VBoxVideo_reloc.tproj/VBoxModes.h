@@ -46,78 +46,90 @@
     The number and the order of these modes MUST match the list provided in the Display.modes file
 */
 static const IODisplayInfo modesTable[] = {
-    {
-		/* 640 x 480, RGB:888/32 */
-		640, 480, 640, 2560, 60, 0,
-		IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
-		0, 0
-	},
-    {
-		/* 800 x 600, RGB:888/32 */
-		800, 600, 800, 3200, 60, 0,
-		IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
-		0, 0
-	},
-	{
-		/* 1024 x 768, RGB:888/32 */
-		1024, 768, 1024, 4096, 60, 0,
-		IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
-		0, 0
-	},
-    {
-		/* 1152 x 864, RGB:888/32 */
-		1152, 864, 1152, 4608, 60, 0,
-		IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
-		0, 0
-	},
-    {
-		/* 1280 x 1024, RGB:888/32 */
-		1280, 1024, 1280, 5120, 60, 0,
-		IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
-		0, 0
-	},
-    {
-		/* 1600 x 1200, RGB:888/32 */
-		1600, 1200, 1600, 6400, 60, 0,
-		IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
-		0, 0
-	},
-    {
-		/* 640 x 480, RGB:555/16 */
-		640, 480, 640, 1280, 60, 0,
-		IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
-		0, 0
-	},
-    {
-		/* 800 x 600, RGB:555/16 */
-		800, 600, 800, 1600, 60, 0,
-		IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
-		0, 0
-	},
-	{
-		/* 1024 x 768, RGB:555/16 */
-		1024, 768, 1024, 2048, 60, 0,
-		IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
-		0, 0
-	},
-    {
-		/* 1152 x 864, RGB:555/16 */
-		1152, 864, 1152, 2340, 60, 0,
-		IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
-		0, 0
-	},
-    {
-		/* 1280 x 1024, RGB:555/16 */
-		1280, 1024, 1280, 2560, 60, 0,
-		IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
-		0, 0
-	},
-    {
-		/* 1600 x 1200, RGB:555/16 */
-		1600, 1200, 1600, 3200, 60, 0,        
-		IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
-		0, 0
-	} 
+  {
+    /* "Height:1080 Width:1920 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1920, 1080, 1920, 1920*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height:1050 Width:1680 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1680, 1050, 1680, 1680*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 900 Width:1440 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1440, 900, 1440, 1440*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 800 Width:1280 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1280, 800, 1280, 1280*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 768 Width:1366 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1366, 768, 1366, 1366*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height:1200 Width:1600 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1600, 1200, 1600, 1600*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height:1024 Width:1280 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1280, 1024, 1280, 1280*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 864 Width:1152 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1152, 864, 1152, 1152*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 768 Width:1024 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    1024, 768, 1024, 1024*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 600 Width: 800 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    800, 600, 800, 800*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 480 Width: 640 Refresh: 60Hz ColorSpace: RGB:888/32"; */
+    640, 480, 640, 640*4, 60, 0,
+    IO_24BitsPerPixel, IO_RGBColorSpace, "--------RRRRRRRRGGGGGGGGBBBBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 768 Width:1024 Refresh: 60Hz ColorSpace: RGB:555/16"; */
+    1024, 768, 1024, 1024*2, 60, 0,
+    IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 600 Width: 800 Refresh: 60Hz ColorSpace: RGB:555/16"; */
+    800, 600, 800, 800*2, 60, 0,
+    IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
+    0, 0
+  },
+  {
+    /* "Height: 480 Width: 640 Refresh: 60Hz ColorSpace: RGB:555/16"; */
+    640, 480, 640, 640*2, 60, 0,
+    IO_15BitsPerPixel, IO_RGBColorSpace, "-RRRRRGGGGGBBBBB",
+    0, 0
+  }
 };
 
 #define modesTableCount (sizeof(modesTable) / sizeof(IODisplayInfo))  	// Elements in the array
